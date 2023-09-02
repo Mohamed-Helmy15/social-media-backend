@@ -19,12 +19,8 @@ const compression = require("compression");
 dotenv.config();
 const app = express();
 app.use(express.json());
-const limiter = rateLimit({
-  max: 100,
-  windowMs: 60 * 60 * 1000,
-  message: "Too many requests from this IP please try again in hour",
-});
-app.use("/api", limiter);
+
+
 
 app.use(ExpressMongoSanitize());
 app.use(helmet());
