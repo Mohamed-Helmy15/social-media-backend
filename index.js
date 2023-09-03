@@ -37,6 +37,7 @@ app.use(
       "http://localhost:3000",
       "https://helmy-social-media.onrender.com",
 "https://helmy-social-media.netlify.app",
+"https://social-media-frontend-nine-ochre.vercel.app"
     ],
   })
 );
