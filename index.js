@@ -36,7 +36,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "https://helmy-social-media.onrender.com",
-"https://visionary-cassata-197f19.netlify.app",
+"https://helmy-social-media.netlify.app",
     ],
   })
 );
