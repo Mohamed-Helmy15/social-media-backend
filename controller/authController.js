@@ -130,7 +130,7 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
   await user.save({ validateBeforeSave: false });
 
   try {
-    const URL = `http://localhost:3000/reset-password?${resetToken}`;
+    const URL = `https://social-media-frontend-nine-ochre.vercel.app/reset-password?${resetToken}`;
     sendEmail({
       email: email,
       subject: "Reset the password",
